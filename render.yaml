@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: digital-society-values
+    name: digital-society-survey
     runtime: node
     plan: free
     buildCommand: npm install
