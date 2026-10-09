@@ -1,0 +1,7 @@
+node_modules/
+responses.json
+*.xlsx
+.DS_Store
+.venv/
+__pycache__/
+aggregated_ternary.png

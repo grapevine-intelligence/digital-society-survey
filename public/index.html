@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Futures 2060 - Values Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Water Futures: What Should We Prioritise?</h1>
+      <p class="intro">
+        By 2060, fresh water is scarce. Every drop is contested between keeping
+        people alive, powering technology, and healing the land. There are no
+        right answers. For each triangle below, place one dot to show how you
+        think society weighs these three priorities.
+      </p>
+      <ul class="legend">
+        <li><strong>Survival</strong> — water kept for human life</li>
+        <li><strong>Innovation</strong> — water for AI, data, and growth</li>
+        <li><strong>Nature</strong> — water returned to land and ecosystems</li>
+      </ul>
+      <p class="how">
+        <strong>How to read the triangle:</strong> each corner is one value. The
+        closer your dot sits to a corner, the more weight you give that value.
+        A dot in the exact centre means you weigh all three equally, and the
+        three weights always add up to 100%. So moving toward one value
+        necessarily means giving up some of the other two.
+        <br /><br />
+        <em>For example:</em> a dot near the <strong>Survival</strong> corner
+        means you think water should go mostly to keeping people alive, with
+        little left for technology or restoring the land. A dot halfway between
+        <strong>Survival</strong> and <strong>Nature</strong> means you split
+        water between human life and healing ecosystems, while giving almost
+        nothing to innovation.
+      </p>
+      <p class="consent">
+        Responses are anonymous and collected for a university module project
+        (MIS20070 Digital Society). No personal information is recorded.
+      </p>
+    </header>
+
+    <section class="plots">
+      <div class="plot-card">
+        <h2>Today (2026)</h2>
+        <p class="hint">How does society weigh these <em>now</em>?</p>
+        <canvas id="plot-present" width="380" height="340"></canvas>
+        <div class="readout" id="readout-present">Click inside the triangle to place your dot.</div>
+      </div>
+
+      <div class="plot-card">
+        <h2>The year 2060</h2>
+        <p class="hint">How will society weigh these in our future world?</p>
+        <canvas id="plot-future" width="380" height="340"></canvas>
+        <div class="readout" id="readout-future">Click inside the triangle to place your dot.</div>
+      </div>
+    </section>
+
+    <section class="submit-area">
+      <button id="submit-btn" disabled>Submit both responses</button>
+      <p class="status" id="status"></p>
+      <p class="counter" id="counter"></p>
+    </section>
+  </main>
+
+  <script src="ternary.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
